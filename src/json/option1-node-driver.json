@@ -1,0 +1,14 @@
+{
+   "authUrl": "https://api.openstack.net:5000/v3",
+   "availabilityZone": "Zone1",
+   "domainName": "Default",
+   "flavorName": "standard.2.1905",
+   "floatingipPool": "extern",
+   "imageName": "ubuntu-18.04-bionic-amd64",
+   "keypairName": "rancher",
+   "netName": "intern",
+   "sshPort": "22",
+   "sshUser": "ubuntu",
+   "tenantId": "616a8b01b5f94f99acd00a844f8f46c3",
+   "username": "user"
+}

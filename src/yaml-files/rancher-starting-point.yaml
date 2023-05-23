@@ -1,0 +1,27 @@
+rancher_kubernetes_engine_config:
+...
+  cloud_provider:
+    name: "openstack"
+    openstackCloudProvider: 
+      block_storage: 
+        ignore-volume-az: true
+        trust-device-path: false
+        bs-version: "v2"
+      global: 
+        auth-url: "https://api.openstack.net:5000/v3" # Keystone Auth URL
+        domain-name: "Default" # Identity v3 Domain Name
+        tenant-id: "616a8b01b5f94f99acd00a844f8f46c3" # Project ID
+        username: "user" # OpenStack Username
+        password: "pass" # OpenStack Password
+      load_balancer:
+        lb-version: "v2"
+        subnet-id: "f339e543-a67f-45fa-8157-4a58b0940e0b"
+        floating-network-id: "ca27ca05-2870-47b3-ad2f-535d04c9e736"
+        create-monitor: false
+        manage-security-groups: true
+        monitor-max-retries: 0
+        use-octavia: true
+      metadata: 
+        request-timeout: 0
+  ignore_docker_version: false
+  ...

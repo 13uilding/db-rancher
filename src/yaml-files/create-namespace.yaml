@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: namespacedr
+  annotations:
+    field.cattle.io/containerDefaultResourceLimit: >-
+      {"limitsCpu":"2000m","limitsMemory":"2000Mi","requestsCpu":"2m","requestsMemory":"1056Mi"}
+    field.cattle.io/projectId: local:p-skm49
+#    key: string
+  labels:
+    field.cattle.io/projectId: p-skm49
+#    key: string
+spec:
+#  finalizers:
+#    - string
+__clone: true
